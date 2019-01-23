@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/*fontstyle used in this website, we keep it here in case
+/*font-family: 'Sarabun', sans-serif; */
+/* couleur vert foncée : #033D19 */
+
+
+body, html{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Sarabun', sans-serif;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.container-fluid{
+	padding:0;
+}
+
+.separator{
+	height: 3px;
+	width: 5%;
+	border:none;
+	box-shadow: none;
+	background-color:#033D19;
+}
+/*header*/
+.header{
+	background-color: #033D19;
+	height: 70px;
+	line-height: 70 px;
+	
+}
+.logo{
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 20px;
+	float: left;
+}
+.menu
+{
+	float:right;
+}
+.menu a {
+	color: #ffffff;
+	margin-right:20px;
+}
+.menu a:hover{
+	color: #4DAB76;
+}
+/*bannière*/
+.banner{
+	width:100%;
+	max-width:100%;
+}
+
+.ban{
+	width:100%;
+	max-width:100%;
+	position: relative;
+}
+
+.ban img{
+	width: 100%;
+	max-width: 100%;
+	
+}
+.inner-banner{
+	position:absolute;
+	top:40%;
+	left:0;
+	width:100%;
+	text-align:center;
+}
+.inner-banner h1{
+	color: #ffffff;
+	text-shadow: 1px 1px 20px #000000;
+}
+.inner-banner .btn-custom{
+	background-color: #033D19;
+	color: #ffffff;
+}
+.inner-banner .btn-custom:hover{
+	background-color: #09C952;
+}
+/*about*/
+.about{
+	margin-top:10%;
+	text-align:center;
+}
+.about article{
+	margin-top:10%;
+}
+.about article h3{
+	text-align:center;
+}
+/*privateaser*/
+.privateaser{
+	margin-top:10%;
+	text-align:center;
+}
+.privateaser div{
+	text-align:center;
+}
+.item-priv input{
+	width: 30%;
+	max-width: 30%;
+	border: 2px solid #033D19;
+	border-radius: 4px;
+	margin-top: 5%;
+	padding: 12px 20px;
+}
+.item-priv .js-option{
+	width:10%;
+}
+label{
+	font-size:20px;
+	color: #033D19;
+	font-style:bold;
+}
+.btn-secondary{
+	background-color: #033D19;
+	color: #ffffff;
+	margin-left:80%;
+}
+.btn-secondary:hover{
+	background-color: #09C952;
+}
+
+
+footer{
+	text-align:right;
+	margin-top:10%;
+}

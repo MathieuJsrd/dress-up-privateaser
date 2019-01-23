@@ -1,23 +1,109 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <meta charset="utf-8">
+
     <title>CSS/HTML Workshop with Privateaser</title>
-  </head>
-  <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
-    </div>
-    <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="privateaser.js"></script>
-    <script src="index.js"></script>
-  </body>
+	
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<!-- contenu du site -->
+
+<body>
+	<!--header-->
+	<header class="container-fluid header"> <!-- class de bootstrap et une class perso-->
+		<div class="container">
+			<a href="#" class="logo">My Privateaser Test </a>
+			<nav class="menu">
+				<a href="#about"> About us </a>
+				<a href="#privateaser"> Draw up a quote </a>
+			</nav>
+		</div>
+	</header>
+	<!--end header-->
+	
+	<!--bannière site-->
+	<section class="container-fluid banner">
+		<div class="ban">
+			<img src="img/ban.jpg" alt="bannière du site"/>
+		</div>
+		<div class="inner-banner">
+			<h1>Welcome on Privateaser</h1>
+			<button class="btn btn-custom" href="#nom">Contact us</button>
+		</div>
+	</section>
+	<!-- end bannière-->
+	
+	<!-- à propos -->
+	<section class="container-fluid about">
+		<div class="container">
+			<h2 id="about">About us</h2>
+			<hr class="separator">
+			<div class="row">
+				<article class="col-md-4 col-lg-4 col-xs-12 col-sm-12"> <!--écran large seront en colonne 4 sur 12, petit écran:full screen -->
+					<h3>Look for places</h3>
+					<p>
+						Thanks to your criterias, find out among 1000 bars, restaurants and rental rooms, the IDEAL place!
+						</p>
+				</article>
+				<article class="col-md-4 col-lg-4 col-xs-12 col-sm-12"> <!--écran large seront en colonne 4 sur 12, petit écran:full screen -->
+					<h3>Make your requests</h3>
+					<p>
+						Make requests for the desired establishments. It is free and without obligation !
+						</p>
+				</article>
+				<article class="col-md-4 col-lg-4 col-xs-12 col-sm-12"> <!--écran large seront en colonne 4 sur 12, petit écran:full screen -->
+					<h3>Keep an eye on your requests</h3>
+					<p>
+						Follow the progress of your requests and confirm your booking in one click.
+					</p>
+				</article>
+			</div>
+		</div>
+	</section>
+	<!-- end à propos -->
+	
+	<!-- privateaser-->
+	<section class="container-fluid privateaser">
+		<div class="container">
+		<h2 id="privateaser">Draw up a quote</h2>
+		<hr class="separator">
+			<div id="bar" class="item-priv">
+				<input class="js-name" type="text" placeholder="Bar name"/>
+				<input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+				<input class="js-price-by-person" type="number" placeholder="Price by person"/>
+			</div>
+			<div id="booker" class="item-priv">
+				<input class="js-name" type="text" placeholder="Booker name"/>
+				<input class="js-time" type="number" placeholder="Time in h"/>
+				<input class="js-persons" type="number" placeholder="Persons"/>
+				<input class="js-option" type="checkbox" id="deductible" name="deductible"/>
+				<label for="deductible">Deductible Option</label>
+			</div>
+			<button id="compute" class="btn btn-secondary">Compute</button>
+			<div id="actors" class="item-priv"></div>
+			<script src="privateaser.js" class="item-priv"></script>
+			<script src="index.js" class="item-priv"></script>
+		</div>
+	</section>
+	<!-- end privateaser -->
+	
+	<!-- footer / contact -->
+	<footer class="container-fluid footer">
+		<div class="container">
+		
+			<p>Mathieu Josserand - 23/01/2019 </p>
+		</div>
+	</footer>
+	<!-- end footer/contact -->
+	
+	
+	
+</body>
 </html>
+
+
